@@ -12,6 +12,9 @@ describe('testing application startup!!!', () => {
     page.navigateTo();
     // Ensure element with id='fname' has text equalling Jane.
     expect(element(by.id('fname')).getText()).toEqual('Jane');
+
+    // Ensure element with id='lname' has text equalling Azza.
+    expect(element(by.id('lname')).getText()).toEqual('Smith');
   
     // Get input element and enter the text 'Boston'.
     var cityInput = element(by.id('cityInput'));
